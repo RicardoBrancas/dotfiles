@@ -11,9 +11,9 @@ let g:gruvbox_italic=1
 
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'morhetz/gruvbox'
-Plugin 'whatyouhide/vim-gotham'
+"Plugin 'whatyouhide/vim-gotham'
 Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
