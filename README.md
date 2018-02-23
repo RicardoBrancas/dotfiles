@@ -1,6 +1,8 @@
 # ricardo's dotfiles
 
 ![screenshot](https://i.imgur.com/qoe1Ydi.png "screenshot")
+font: [source-code-pro](https://github.com/powerline/fonts/tree/master/SourceCodePro),
+colorscheme: loosely [gruvbox](https://github.com/morhetz/gruvbox)
 
 ## Installation
 
