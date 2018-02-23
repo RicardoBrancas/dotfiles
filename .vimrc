@@ -2,6 +2,7 @@ set nocompatible
 filetype off
 
 set termguicolors
+syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -27,7 +28,8 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 
 let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "colorscheme gruvbox
 colorscheme gotham
-highlight Normal guibg=#141A1B
+"highlight Normal guibg=#141A1B
