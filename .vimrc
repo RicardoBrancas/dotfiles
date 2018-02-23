@@ -11,8 +11,8 @@ let g:gruvbox_italic=1
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'vim-syntastic/syntastic'
-"Plugin 'morhetz/gruvbox'
+"Plugin 'vim-syntastic/syntastic'
+Plugin 'morhetz/gruvbox'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'vim-airline/vim-airline'
 
@@ -30,6 +30,10 @@ let g:airline_powerline_fonts = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"colorscheme gruvbox
-colorscheme gotham
+colorscheme gruvbox
+
+set background=dark
+let g:gruvbox_termcolors = 1
+
+"colorscheme gotham
 "highlight Normal guibg=#141A1B
