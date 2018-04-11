@@ -23,3 +23,4 @@ let b:current_syntax = "gr8"
 set commentstring=!!\ %s
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set list
+set ts=8
