@@ -11,11 +11,14 @@ hi def link gr8Keyword Function
 
 syn match gr8Comment "!!.*$"
 
+syn region gr8CommentL start="<<" end=">>" containedin=gr8CommentL fold extend
+
 syntax match gr8Number "\v<\d+>"
 syntax match gr8Number "\v<\d+\.\d+>"
 syntax match gr8Number "\v<\d*\.?\d+([Ee]-?)?\d+>"
 
 hi def link gr8Comment Comment
+hi def link gr8CommentL Comment
 hi def link gr8Number Number
 
 let b:current_syntax = "gr8"
