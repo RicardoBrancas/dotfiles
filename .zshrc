@@ -26,6 +26,8 @@ POWERLEVEL9K_STATUS_OK=false
 # Source antigen module
 source ~/.zsh/antigen/antigen.zsh
 
+export EDITOR=$(which vim)
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -43,3 +45,4 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen theme bhilburn/powerlevel9k powerlevel9k
 
 antigen apply
+export GPG_TTY=$(tty)
