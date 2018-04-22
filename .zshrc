@@ -4,6 +4,7 @@ DEFAULT_USER="$USER"
 autoload -Uz compinit
 compinit
 
+zstyle -e ':completion:*:(ssh|scp|sftp|rsh):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
 
@@ -34,8 +35,8 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 
-#antigen bundle command-not-found
-#antigen bundle colored-man-pages
+antigen bundle command-not-found
+antigen bundle colored-man-pages
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 

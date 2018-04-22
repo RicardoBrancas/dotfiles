@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
+Plugin 'gregsexton/MatchTag'
 
 call vundle#end()
 filetype plugin indent on
