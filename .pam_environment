@@ -1,3 +1,2 @@
 SSH_AUTH_SOCK	DEFAULT="${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh"
 EDITOR	        DEFAULT="/usr/bin/vim"
-PATH DEFAULT=${PATH}:/home/@{PAM_USER}/bin
