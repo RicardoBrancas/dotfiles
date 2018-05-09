@@ -24,6 +24,11 @@ POWERLEVEL9K_FOLDER_ICON=''
 # status config
 POWERLEVEL9K_STATUS_OK=false
 
+#aliases
+
+alias vim-nasm='vim -c "set filetype=nasm"'
+
+
 # Source antigen module
 source ~/.zsh/antigen/antigen.zsh
 
