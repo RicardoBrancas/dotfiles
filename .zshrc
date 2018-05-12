@@ -1,3 +1,6 @@
+#using different caches for diferent $TERMs
+ANTIGEN_CACHE=$HOME/.antigen/init-${TERM}.zsh
+
 DEFAULT_USER="$USER"
 
 # Start full autocomplete
@@ -10,7 +13,10 @@ zstyle ':completion:*' menu select
 
 # Powerlevel9k config
 
-POWERLEVEL9K_MODE='awesome-fontconfig'
+if [ "$TERM" = "xterm-256color" ]
+then
+	POWERLEVEL9K_MODE='awesome-fontconfig'
+fi
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
@@ -24,22 +30,18 @@ POWERLEVEL9K_FOLDER_ICON=''
 # status config
 POWERLEVEL9K_STATUS_OK=false
 
+export EDITOR=$(which vim)
+
 #aliases
 
 alias vim-nasm='vim -c "set filetype=nasm"'
+alias gdb='gdb -q'
 
+source /usr/share/zsh/share/antigen.zsh
 
-# Source antigen module
-source ~/.zsh/antigen/antigen.zsh
-
-export EDITOR=$(which vim)
-
-# Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
-
 antigen bundle command-not-found
 antigen bundle colored-man-pages
 antigen bundle zsh-users/zsh-completions
@@ -48,7 +50,10 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # must be loaded after zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
-antigen theme bhilburn/powerlevel9k powerlevel9k
+if [ "$TERM" = "xterm-256color" ]
+then
+	antigen theme bhilburn/powerlevel9k powerlevel9k
+fi
 
 antigen apply
 export GPG_TTY=$(tty)
