@@ -18,8 +18,11 @@ then
 	POWERLEVEL9K_MODE='awesome-fontconfig'
 fi
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs command_execution_time time battery)
+
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\ue0bc'
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\ue0ba'
 
 # dir config
 POWERLEVEL9K_DIR_SHOW_WRITABLE=true
@@ -30,6 +33,7 @@ POWERLEVEL9K_FOLDER_ICON=''
 # status config
 POWERLEVEL9K_STATUS_OK=false
 
+PATH=$PATH:~/bin/
 export EDITOR=$(which vim)
 
 #aliases

@@ -19,6 +19,7 @@ call vundle#end()
 filetype plugin indent on
 
 set mouse=a
+set clipboard=unnamed
 
 set ts=4
 set shiftwidth=4
