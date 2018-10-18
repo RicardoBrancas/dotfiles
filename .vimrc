@@ -39,3 +39,8 @@ set background=light
 let g:gruvbox_termcolors = 1
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_light='soft'
+
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
