@@ -11,27 +11,8 @@ zstyle -e ':completion:*:(ssh|scp|sftp|rsh):hosts' hosts 'reply=(${=${${(f)"$(ca
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
 
-# Powerlevel9k config
+# Spaceship config
 
-if [ "$TERM" = "xterm-256color" ]
-then
-	POWERLEVEL9K_MODE='awesome-fontconfig'
-fi
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs command_execution_time time battery)
-
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\ue0bc'
-POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\ue0ba'
-
-# dir config
-POWERLEVEL9K_DIR_SHOW_WRITABLE=true
-POWERLEVEL9K_HOME_ICON=''
-POWERLEVEL9K_HOME_SUB_ICON=''
-POWERLEVEL9K_FOLDER_ICON=''
-
-# status config
-POWERLEVEL9K_STATUS_OK=false
 
 PATH=$PATH:~/bin/
 export EDITOR=$(which vim)
@@ -56,7 +37,7 @@ antigen bundle zsh-users/zsh-history-substring-search
 
 if [ "$TERM" = "xterm-256color" ]
 then
-	antigen theme bhilburn/powerlevel9k powerlevel9k
+	antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 fi
 
 antigen apply
