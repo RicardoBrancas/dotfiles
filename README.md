@@ -1,6 +1,6 @@
 # ricardo's dotfiles
 
-![screenshot](https://imgur.com/CGdpuHd "screenshot")
+![screenshot](https://i.imgur.com/CGdpuHd.png "screenshot")
 
 
 font: [source-code-pro](https://github.com/powerline/fonts/tree/master/SourceCodePro),
