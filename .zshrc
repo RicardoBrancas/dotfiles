@@ -12,7 +12,9 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
 
 # Spaceship config
-
+SPACESHIP_BATTERY_THRESHOLD=70
+SPACESHIP_BATTERY_SYMBOL_CHARGING=" "
+SPACESHIP_BATTERY_SYMBOL_DISCHARGING=""
 
 PATH=$PATH:~/bin/
 export EDITOR=$(which vim)
