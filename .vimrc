@@ -1,12 +1,8 @@
-set nocompatible
-filetype off
-
 set termguicolors
 syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 
 Plugin 'VundleVim/Vundle.vim'
 
@@ -20,12 +16,14 @@ call vundle#end()
 filetype plugin indent on
 
 set mouse=a
-set clipboard=unnamed
 
 set ts=4
 set shiftwidth=4
+set nu rnu
 
-set laststatus=2
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
 
 let g:airline_powerline_fonts = 1
 
@@ -34,12 +32,11 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-colorscheme gruvbox
-
-set background=light
-let g:gruvbox_termcolors = 1
+set background=dark
 let g:gruvbox_italic=1
-let g:gruvbox_contrast_light='soft'
+let g:gruvbox_contrast_dark='hard'
+
+colorscheme gruvbox
 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
