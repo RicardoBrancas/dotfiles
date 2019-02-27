@@ -1,4 +1,3 @@
-set termguicolors
 syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,6 +10,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'gregsexton/MatchTag'
 Plugin 'alexeyignatiev/vim-dimacs'
+Plugin 'wlangstroth/vim-racket'
+Plugin 'kien/rainbow_parentheses.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -32,11 +33,11 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-set background=dark
 let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_light='medium'
 
 colorscheme gruvbox
+set termguicolors
 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
