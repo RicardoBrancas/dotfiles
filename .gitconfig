@@ -2,3 +2,5 @@
 	path = .gitconfig.local
 [user]
 	signingkey = 4D809747EC4D3752
+[commit]
+	gpgsign = false
