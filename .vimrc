@@ -1,4 +1,3 @@
-set termguicolors
 syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,9 +10,11 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'gregsexton/MatchTag'
 Plugin 'alexeyignatiev/vim-dimacs'
+Plugin 'wlangstroth/vim-racket'
 Plugin 'https://manu@framagit.org/manu/coq-au-vim.git'
 Plugin 'jvoorhis/coq.vim'
 Plugin 'rainglow/vim'
+Plugin 'vim-latex/vim-latex'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,9 +40,10 @@ let g:syntastic_check_on_wq = 0
 
 set background=light
 let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_contrast_dark='medium'
 
 colorscheme gruvbox
+set termguicolors
 
 if &background ==# 'light'
   hi gCoqSent    guibg=red ctermbg=red
