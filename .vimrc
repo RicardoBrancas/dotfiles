@@ -23,6 +23,7 @@ set mouse=a
 set ts=4
 set shiftwidth=4
 set nu rnu
+set foldcolumn=1
 
 " Enable folding
 set foldmethod=indent

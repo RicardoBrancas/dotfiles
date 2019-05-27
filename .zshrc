@@ -12,6 +12,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
 
 # Spaceship config
+SPACESHIP_HOST_SHOW=always
 SPACESHIP_BATTERY_THRESHOLD=70
 SPACESHIP_BATTERY_SYMBOL_CHARGING=" "
 SPACESHIP_BATTERY_SYMBOL_DISCHARGING=""
@@ -23,6 +24,7 @@ export EDITOR=$(which vim)
 
 alias vim-nasm='vim -c "set filetype=nasm"'
 alias gdb='gdb -q'
+alias zaek='ssh -CY zaek'
 
 source /usr/share/zsh/share/antigen.zsh
 
