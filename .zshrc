@@ -33,6 +33,7 @@ antigen bundle command-not-found
 antigen bundle colored-man-pages
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle "MichaelAquilina/zsh-autoswitch-virtualenv"
 
 # must be loaded after zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search

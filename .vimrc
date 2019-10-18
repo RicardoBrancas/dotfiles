@@ -38,7 +38,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-set background=light
+set background=dark
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark='medium'
 
